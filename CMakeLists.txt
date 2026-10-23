@@ -87,8 +87,22 @@ target_sources(PYRo PRIVATE
         Device/WS2812/ws2812_driver.cpp
         Device/WS2812/ws2812_middleware.cpp
 
+	# --- Device ---
+	Log/elog/elog_async.c
+        Log/elog/elog_buf.c
+        Log/elog/elog_utils.c
+        Log/elog/elog.c
+        Log/elog/port/elog_port.c
+        Log/elog/port/elog_flash.cpp
+        Log/log.c
 
+        Log/LittleFs/lfs.c
+        Log/LittleFs/lfs_util.c
+        Log/LittleFs/Adapters/adapter-lfs.cpp
 
+        Log/RTT/SEGGER_RTT_ASM_ARMv7M.S
+        Log/RTT/SEGGER_RTT_printf.c
+        Log/RTT/SEGGER_RTT.c
 )
 
 
